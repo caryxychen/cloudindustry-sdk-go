@@ -10,6 +10,8 @@ import (
 type DescribeAccountsRequest struct {
 	*tchttp.BaseRequest
 	AccountIds []string `json:"AccountIds"`
+	SearchKey  string   `json:"SearchKey"`
+	Limit      string   `json:"Limit"`
 }
 
 // DescribeAccountsResponse
